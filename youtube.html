@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Youtube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="images/hamburger-menu.svg" alt="" />
+        <img class="youtube-logo" src="images/youtube-logo.svg" alt="" />
+      </div>
+      <div class="middle-section">
+        <input
+          class="search-bar"
+          type="text"
+          placeholder="Search"
+          name=""
+          id=""
+        />
+        <button class="search-button">
+          <img class="search-icon" src="images/search.svg" alt="" />
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- Need position absolute within position relative -->
+        <button class="voice-search-button">
+          <img class="voice-icon" src="images/voice-search-icon.svg" alt="" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="images/upload.svg" alt="" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-apps-container">
+          <img class="youtube-apps-icon" src="images/youtube-apps.svg" alt="" />
+          <div class="tooltip">Youtube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <div class="notifications-count">3</div>
+          <div class = "notification-container">
+            <img
+            class="notifications-icon"
+            src="images/notifications.svg"
+            alt=""
+          />
+          <div class="tooltip">Notifications</div>
+          </div>
+        </div>
+        <div class = "user-photo-container">
+          <img class="current-user-picture" src="images/smilee.PNG" alt="" />
+          <div class="tooltip">Profile</div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="images/home.svg" alt="" />
+        <div>Home</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="images/explore.svg" alt="" />
+        <div>Explore</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="images/subscriptions.svg" alt="" />
+        <div>Explore</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="images/originals.svg" alt="" />
+        <div>Subscriptions</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="images/youtube-music.svg" alt="" />
+        <div>Originals</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="images/library.svg" alt="" />
+        <div>Youtube Music</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/3 Days Solo Camping and Canoeing on Backcountry River - Moose and Calf Encounter.jpg"
+              alt=""
+            />
+            <div class="video-time">37:01</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="youtubeimages/unnamed.jpg"
+                alt=""
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                3 Days Solo Camping and Canoeing on Backcountry River - Moose and
+                Calf Encounter
+              </p>
+              <p class="video-author">Xander Budnick</p>
+              <p class="video-stats">368k Views &#183; 7 months ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/Living In A Tiny Boat On The Ocean.jpg"
+              alt=""
+            />
+            <div class="video-time">15:58</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="youtubeimages/ybs.jpg" alt="" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">Living In A Tiny Boat On The Ocean</p>
+              <p class="video-author">YBS Youngbloods</p>
+              <p class="video-stats">1.9M Views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/traveling vehicle powered by water and wood 7.4M views PROFESSOR PARDAL BRASIL.jpg"
+              alt=""
+            />
+            <div class="video-time">8:02</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="youtubeimages/waterpic.jpg"
+                alt=""
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                traveling vehicle powered by water and wood
+              </p>
+              <p class="video-author">PROFESSOR PARDAL BRASIL</p>
+              <p class="video-stats">7.4M Views &#183; 2 weeks ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/Drone Delivery Was Supposed to be the Future. What Went Wrong 1.3M views Wendover productins 1 month ago.jpg"
+              alt=""
+            />
+            <div class="video-time">18:40</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="youtubeimages/wendover.jpg"
+                alt=""
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Drone Delivery Was Supposed to be the Future. What Went Wrong?
+              </p>
+              <p class="video-author">Wendover Productions</p>
+              <p class="video-stats">1.3M Views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/lofi hip hop radio - beats to relaxstudy to.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="youtubeimages/lofi.jpg" alt="" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                lofi hip hop radio - beats to relax/study to
+              </p>
+              <p class="video-author">Lofi Girl</p>
+              <p class="video-stats">47k Watching &#183;</p>
+              <p class="live">Live Now</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/The Iconic $1 Pizza Slice of NYC  Street Food Icons 11M Views - Munchies - 2 Years ago.jpg"
+              alt=""
+            />
+            <div class="video-time">7:51</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="youtubeimages/munchies.jpg"
+                alt=""
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                The Iconic $1 Pizza Slice of NYC | Street Food Icons
+              </p>
+              <p class="video-author">Munchies</p>
+              <p class="video-stats">11M Views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/Inside The World's Biggest Fish Farm - 1M views - Innovative Techs.jpg"
+              alt=""
+            />
+            <div class="video-time">7:26</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="youtubeimages/innovative.jpg"
+                alt=""
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Inside The World's Biggest Fish Farm
+              </p>
+              <p class="video-author">Innovative Techs</p>
+              <p class="video-stats">1M Views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/How Ocean Shipping Works (And Why It's Broken) 2.6M views Wendover productions 3 months ago.jpg"
+              alt=""
+            />
+            <div class="video-time">19:18</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="youtubeimages/wendover.jpg"
+                alt=""
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                How Ocean Shipping Works (And Why It's Broken)
+              </p>
+              <p class="video-author"> Webdover Productions</p>
+              <p class="video-stats">2.6M Views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/16Days Building Underground House,grass roof with Decoration Underground Living Room 648.741 views Primitive building..jpg"
+              alt=""
+            />
+            <div class="video-time">21:50</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="youtubeimages/primitive.jpg"
+                alt=""
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                16 Days Building Underground House
+              </p>
+              <p class="video-author"> Primitive Building</p>
+              <p class="video-stats">726k Views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img
+              class="thumbnail"
+              src="youtubeimages/16Days Building Underground House,grass roof with Decoration Underground Living Room 648.741 views Primitive building..jpg"
+              alt=""
+            />
+            <div class="video-time">21:50</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img
+                class="profile-picture"
+                src="youtubeimages/primitive.jpg"
+                alt=""
+              />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                16 Days Building Underground House
+              </p>
+              <p class="video-author"> Primitive Building</p>
+              <p class="video-stats">726k Views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
